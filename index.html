@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPEN CINEMA 24/7 — Full-length films, free on YouTube. Always open.</title>
+<meta name="description" content="OPEN CINEMA 24/7 streams full-length films from Korea, Asia and around the world on YouTube — officially licensed, subtitled and free to watch, 24 hours a day. Operated by Eokmanjangja Pictures.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OPEN CINEMA 24/7">
+<meta property="og:title" content="OPEN CINEMA 24/7 — Your cinema is always open.">
+<meta property="og:description" content="Full-length films from Korea, Asia and the world. Officially licensed, subtitled, free on YouTube — 24 hours a day.">
+<meta property="og:url" content="https://crossnam-coding.github.io/opencinema247/">
+<meta property="og:image" content="https://crossnam-coding.github.io/opencinema247/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://crossnam-coding.github.io/opencinema247/">
+<link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/BebasNeue-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/InterTight-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://crossnam-coding.github.io/opencinema247/#org","name":"OPEN CINEMA 24/7","alternateName":["Open Cinema 247","오픈 시네마 24/7"],"url":"https://crossnam-coding.github.io/opencinema247/","logo":"https://crossnam-coding.github.io/opencinema247/assets/avatar.png","sameAs":["https://www.youtube.com/@OpenCinema247"],"parentOrganization":{"@type":"Organization","name":"Eokmanjangja Pictures Co., Ltd.","alternateName":"주식회사 억만장자픽처스"},"contactPoint":{"@type":"ContactPoint","email":"eokman.youtube@gmail.com","contactType":"licensing","availableLanguage":["en","ko"]}},
+ {"@type":"WebSite","url":"https://crossnam-coding.github.io/opencinema247/","name":"OPEN CINEMA 24/7","inLanguage":["en","ko"],"publisher":{"@id":"https://crossnam-coding.github.io/opencinema247/#org"}},
+ {"@type":"ItemList","name":"OPEN CINEMA 24/7 — first slate","itemListElement":[
+  {"@type":"ListItem","position":1,"item":{"@type":"Movie","name":"New Year Blues","alternateName":"새해전야","dateCreated":"2021","genre":["Romance","Comedy"],"director":{"@type":"Person","name":"Hong Ji-young"},"countryOfOrigin":"KR"}},
+  {"@type":"ListItem","position":2,"item":{"@type":"Movie","name":"Remember","alternateName":"리멤버","dateCreated":"2022","genre":["Action","Thriller"],"director":{"@type":"Person","name":"Lee Il-hyung"},"countryOfOrigin":"KR"}},
+  {"@type":"ListItem","position":3,"item":{"@type":"Movie","name":"Troll Factory","alternateName":"댓글부대","dateCreated":"2024","genre":["Crime","Drama"],"director":{"@type":"Person","name":"Ahn Gook-jin"},"countryOfOrigin":"KR"}},
+  {"@type":"ListItem","position":4,"item":{"@type":"Movie","name":"Dirty Money","alternateName":"더러운 돈에 손대지 마라","dateCreated":"2024","genre":["Action","Crime"],"director":{"@type":"Person","name":"Kim Min-su"},"countryOfOrigin":"KR"}},
+  {"@type":"ListItem","position":5,"item":{"@type":"Movie","name":"Firefighters","alternateName":"소방관","dateCreated":"2024","genre":["Disaster","Drama"],"director":{"@type":"Person","name":"Kwak Kyung-taek"},"countryOfOrigin":"KR"}}
+ ]}
+]}
+</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="OPEN CINEMA 24/7 home">
+    <img src="assets/avatar.png" alt="" width="512" height="512">
+    <span class="wordmark">OPEN CINEMA <b>24/7</b></span>
+  </a>
+  <nav class="links">
+    <a href="#films" data-ko="상영작">Films</a>
+    <a href="#why" data-ko="왜 여기서">Why here</a>
+    <a href="#partners" data-ko="판권사 안내">Rights holders</a>
+    <a href="#about" data-ko="회사">About</a>
+    <a href="#contact" data-ko="연락">Contact</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Switch language">KO</button>
+  <a class="btn gold small yt" href="https://www.youtube.com/@OpenCinema247?sub_confirmation=1" target="_blank" rel="noopener" data-ko="구독">Subscribe</a>
+</header>
+
+<div class="hero-wrap" id="heroWrap">
+<section class="hero" id="top">
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="eyebrow" data-ko="<span class='bars' aria-hidden='true'></span>유튜브 영화 채널 · 한국 · 아시아 · 세계"><span class="bars" aria-hidden="true"></span>A film channel on YouTube · Korea · Asia · World</p>
+    <h1 class="h1" data-ko="당신의 극장은<br>언제나 열려 있습니다.">Your cinema<br>is always open.</h1>
+    <p class="lead" data-ko="OPEN CINEMA 24/7은 한국·아시아·세계의 장편 영화를 정식 라이선스로, 제대로 된 자막과 함께, 유튜브에서 무료로 상영합니다. 불은 밤새 꺼지지 않습니다.">OPEN CINEMA 24/7 streams full-length films from Korea, Asia and around the world — officially licensed, properly subtitled, free to watch on YouTube. The lights stay on all night.</p>
+    <p class="hand" data-ko="티켓도, 줄도 없어요. 팝콘만 챙겨 오세요.">No ticket. No queue. Popcorn's on you.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://www.youtube.com/@OpenCinema247?sub_confirmation=1" target="_blank" rel="noopener" data-ko="유튜브 구독하기">Subscribe on YouTube</a>
+      <a class="btn ghost" href="#films" data-ko="상영 예정작 보기">What's on the marquee</a>
+    </div>
+  </div>
+  <div class="hud" id="hud" aria-hidden="true">
+    <div class="hud-head"><span data-ko="지금 간판에는">On the marquee</span><b id="hudYear">2024</b></div>
+    <p class="hud-line" id="hudLine"></p>
+    <div class="hud-bar"><i id="hudBar"></i></div>
+    <div class="hud-foot"><span data-ko="장편 · 자막 · 무료 · 24/7">Full-length · subtitled · free · 24/7</span><span class="dot"></span></div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Korean cinema</span><i></i><span>Asian drama</span><i></i><span>World films</span><i></i><span>Action</span><i></i><span>Thriller</span><i></i><span>Crime</span><i></i><span>Disaster</span><i></i><span>Romance</span><i></i><span>Full-length</span><i></i><span>Subtitled</span><i></i><span>Free</span><i></i><span>Always open</span><i></i>
+    <span>Korean cinema</span><i></i><span>Asian drama</span><i></i><span>World films</span><i></i><span>Action</span><i></i><span>Thriller</span><i></i><span>Crime</span><i></i><span>Disaster</span><i></i><span>Romance</span><i></i><span>Full-length</span><i></i><span>Subtitled</span><i></i><span>Free</span><i></i><span>Always open</span><i></i>
+  </div>
+</div>
+
+<section class="stats" id="numbers">
+  <div class="wrap">
+    <p class="kicker" data-reveal data-ko="<span class='bars' aria-hidden='true'></span>숫자로 보는 운영사"><span class="bars" aria-hidden="true"></span>The people behind the screen · by the numbers</p>
+    <ul class="stat-grid">
+      <li data-reveal><b class="num" data-count="27">0</b><span data-ko="년, 한국 영화계에서 — 수입·극장 배급·매니지먼트·제작">years in Korean cinema — import, theatrical distribution, talent, production</span></li>
+      <li data-reveal><b class="num" data-count="12">0</b><span data-ko="개 계열사 (컨소시엄 합산)">companies across the consortium</span></li>
+      <li data-reveal><b class="num" data-count="80" data-suffix="+">0</b><span data-ko="편, 한국 시장에 배급한 영화">films distributed in Korea</span></li>
+      <li data-reveal><b class="num" data-count="5">0</b><span data-ko="편, 첫 상영 라인업">films in the first slate</span></li>
+      <li data-reveal><b class="num">24<em>/</em>7</b><span data-ko="문이 열려 있는 시간">hours the doors stay open</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="films" id="films">
+  <div class="wrap">
+    <p class="kicker" data-reveal data-ko="<span class='bars' aria-hidden='true'></span>첫 라인업 · 공개 예정"><span class="bars" aria-hidden="true"></span>First slate · coming soon</p>
+    <h2 class="h2" data-reveal data-ko="지금 간판에 걸린 영화.">Now on the marquee.</h2>
+    <p class="desc" data-reveal data-ko="2021–2024년 한국 극장 개봉작 다섯 편을 극장판 그대로, 장편 전체를 자막과 함께 상영합니다. 국가에 따라 시청 가능 여부가 다를 수 있습니다.">Five wide-release Korean features, 2021–2024, as they played in theaters — full-length, with subtitles. Availability may vary by country.</p>
+
+    <div class="film-grid">
+      <article class="film" data-reveal>
+        <div class="mq" aria-hidden="true">NEW YEAR BLUES</div>
+        <div class="film-body">
+          <h3>새해전야 <small>New Year Blues</small></h3>
+          <p class="meta"><span>2021</span><span data-ko="멜로 · 드라마">Romance · Comedy</span><span data-ko="감독 홍지영">Dir. Hong Ji-young</span></p>
+          <p class="log" data-ko="새해를 앞둔 일주일, 네 커플의 설레고 흔들리는 이야기.">Four couples, one romantic and wobbly week leading up to New Year's Eve.</p>
+          <p class="cast" data-ko="출연 김강우, 유인나, 유연석, 이연희, 이동휘, 최수영, 유태오">Cast: Kim Kang-woo, Yoo In-na, Yoo Yeon-seok, Lee Yeon-hee, Lee Dong-hwi, Choi Soo-young, Yoo Teo</p>
+        </div>
+      </article>
+
+      <article class="film" data-reveal>
+        <div class="mq" aria-hidden="true">REMEMBER</div>
+        <div class="film-body">
+          <h3>리멤버 <small>Remember</small></h3>
+          <p class="meta"><span>2022</span><span data-ko="드라마 · 스릴러">Action · Thriller</span><span data-ko="감독 이일형">Dir. Lee Il-hyung</span></p>
+          <p class="log" data-ko="알츠하이머를 앓는 80대 노인이 60년을 벼른 복수를 시작한다. 그 옆엔 영문도 모르는 20대 알바생.">An 80-year-old with Alzheimer's sets out to finish the revenge he has planned for sixty years — with a clueless twenty-something behind the wheel.</p>
+          <p class="cast" data-ko="출연 이성민, 남주혁">Cast: Lee Sung-min, Nam Joo-hyuk</p>
+        </div>
+      </article>
+
+      <article class="film" data-reveal>
+        <div class="mq" aria-hidden="true">TROLL FACTORY</div>
+        <div class="film-body">
+          <h3>댓글부대 <small>Troll Factory</small></h3>
+          <p class="meta"><span>2024</span><span data-ko="범죄 · 드라마">Crime · Drama</span><span data-ko="감독 안국진">Dir. Ahn Gook-jin</span></p>
+          <p class="log" data-ko="정직당한 기자가 여론을 조작하는 댓글부대의 실체를 파헤친다. 댓글 하나에 진실이 뒤집힌다.">A suspended reporter uncovers the troll factory manipulating public opinion, one fake comment at a time.</p>
+          <p class="cast" data-ko="출연 손석구, 김성철, 김동휘, 홍경">Cast: Son Suk-ku, Kim Sung-cheol, Kim Dong-hwi, Hong Kyung</p>
+        </div>
+      </article>
+
+      <article class="film" data-reveal>
+        <div class="mq" aria-hidden="true">DIRTY MONEY</div>
+        <div class="film-body">
+          <h3>더러운 돈에 손대지 마라 <small>Dirty Money</small></h3>
+          <p class="meta"><span>2024</span><span data-ko="범죄 · 느와르">Action · Crime</span><span data-ko="감독 김민수">Dir. Kim Min-su</span></p>
+          <p class="log" data-ko="검은돈을 훔친 두 형사가 자신들이 수사해야 할 사건 한가운데 서게 된다.">Two detectives steal a criminal fortune — and land inside the very investigation they are supposed to be running.</p>
+          <p class="cast" data-ko="출연 정우, 김대명, 박병은">Cast: Jung Woo, Kim Dae-myung, Park Byung-eun</p>
+        </div>
+      </article>
+
+      <article class="film" data-reveal>
+        <div class="mq" aria-hidden="true">FIREFIGHTERS</div>
+        <div class="film-body">
+          <h3>소방관 <small>Firefighters</small></h3>
+          <p class="meta"><span>2024</span><span data-ko="재난 · 휴먼 드라마">Disaster · Drama</span><span data-ko="감독 곽경택">Dir. Kwak Kyung-taek</span></p>
+          <p class="log" data-ko="2001년 홍제동 화재 실화. 모두가 뛰쳐나올 때 들어간 사람들의 이야기.">Based on the true story of the 2001 Hongje-dong fire — the crew that went in when everyone else ran out.</p>
+          <p class="cast" data-ko="출연 주원, 곽도원, 유재명">Cast: Joo Won, Kwak Do-won, Yoo Jae-myung</p>
+        </div>
+      </article>
+    </div>
+    <p class="fine" data-reveal data-ko="제목과 연도는 한국 극장 개봉 기준입니다. 시청 가능 국가는 각 영화의 판권에 따릅니다.">Titles and years as released in Korean theaters. Where a film can be watched depends on its rights in your country.</p>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <p class="kicker" data-reveal data-ko="<span class='bars' aria-hidden='true'></span>왜 여기서 보나요"><span class="bars" aria-hidden="true"></span>Why watch here</p>
+    <h2 class="h2" data-reveal data-ko="클립도, 불법 복제도 아닙니다.<br>영화 한 편, 통째로.">Not clips. Not rips.<br>The whole film.</h2>
+    <ol class="tiles">
+      <li data-reveal>
+        <span class="n">01</span>
+        <h3 data-ko="정식 라이선스">Officially licensed</h3>
+        <p data-ko="모든 영화는 판권사와의 계약 아래 상영되고 유튜브 Content ID에 등록됩니다. 만든 사람에게 수익이 돌아갑니다.">Every film is here under an agreement with its rights holder and registered with YouTube Content ID. The people who made it get paid.</p>
+      </li>
+      <li data-reveal>
+        <span class="n">02</span>
+        <h3 data-ko="극장판 그대로">The theatrical cut</h3>
+        <p data-ko="처음부터 끝까지, 극장에서 상영된 그대로. 10분 요약도, 캠 영상도, ‘9편 중 3편’도 없습니다.">Start to finish, as it played in cinemas. No ten-minute recaps, no cam rips, no “part 3 of 9”.</p>
+      </li>
+      <li data-reveal>
+        <span class="n">03</span>
+        <h3 data-ko="말이 되는 자막">Subtitles that make sense</h3>
+        <p data-ko="제대로 만든 영어 자막을 먼저. 라이브러리가 커지는 만큼 언어를 늘려갑니다.">Proper English subtitles first — more languages as the library grows.</p>
+      </li>
+      <li data-reveal>
+        <span class="n">04</span>
+        <h3 data-ko="무료. 언제나 열려 있음.">Free. Always open.</h3>
+        <p data-ko="광고 기반 무료, 구독료도 가입도 없습니다. 새벽 3시도 영화 보기 좋은 시간입니다.">Ad-supported, no subscription, no sign-up. Three in the morning is a perfectly good time for a movie.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="wrap two">
+    <div>
+      <p class="kicker" data-reveal data-ko="<span class='bars' aria-hidden='true'></span>배급사 · 제작사 · 세일즈 에이전트"><span class="bars" aria-hidden="true"></span>For distributors, producers and sales agents</p>
+      <h2 class="h2" data-reveal data-ko="창고에서 잠자는 영화가 있나요?<br>저희가 깨워드리겠습니다.">Got a film sleeping in the vault?<br>Let's wake it up.</h2>
+      <p class="body" data-reveal data-ko="완성된 장편 영화를 비독점으로 유튜브 AVOD에 라이선스합니다 — 기존 계약은 그대로 유지하세요. 인코딩·자막·Content ID 등록·지역 차단·월간 리포트를 저희가 맡고, 광고 수익을 나눕니다. 한국·아시아·해외 작품 모두 환영합니다.">We license finished feature films for YouTube AVOD on a non-exclusive basis — you keep your existing deals. We handle encoding, subtitles, Content ID registration, territory blocking and monthly reporting, and share the advertising revenue with you. Korean, Asian and international titles welcome.</p>
+      <a class="btn primary" data-reveal href="mailto:eokman.youtube@gmail.com?subject=%5BLicensing%5D%20Film%20submission%20to%20OPEN%20CINEMA%2024%2F7" data-ko="영화 제안하기">Submit a film</a>
+    </div>
+    <dl class="facts checklist" data-reveal>
+      <div><dt data-ko="보내주실 것">What to send</dt><dd data-ko="제목 · 연도 · 상영시간">Title, year, running time</dd></div>
+      <div><dt></dt><dd data-ko="허가 가능한 지역">Territories you can clear</dd></div>
+      <div><dt></dt><dd data-ko="스크리너 링크">A screener link</dd></div>
+      <div><dt></dt><dd data-ko="판권 담당자 연락처">Rights-holder contact</dd></div>
+      <div><dt data-ko="계약 형태">Deal</dt><dd data-ko="비독점 · 광고 수익 배분 · Content ID 보호 · 지역별 차단 관리">Non-exclusive · ad-revenue share · Content ID protection · territory control</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap two">
+    <div>
+      <p class="kicker" data-reveal data-ko="<span class='bars' aria-hidden='true'></span>화면 뒤의 회사"><span class="bars" aria-hidden="true"></span>The company behind the screen</p>
+      <h2 class="h2" data-reveal data-ko="주식회사 억만장자픽처스">Eokmanjangja Pictures</h2>
+      <p class="body" data-reveal data-ko="OPEN CINEMA 24/7은 해외 영화 수입·배급사 주식회사 억만장자픽처스가 운영합니다. 대표 김대억은 영화 수입, 지역 극장 배급, 매니지먼트, 제작에 걸쳐 27년간 한국 영화계에서 일해 왔습니다. 채널은 12개 계열사로 이루어진 한국 영화 컨소시엄의 일부로, 이 컨소시엄은 한국 시장에 80편 이상의 영화를 배급해 왔습니다.">OPEN CINEMA 24/7 is operated by Eokmanjangja Pictures (주식회사 억만장자픽처스), a Korean foreign-film import and distribution company led by Kim Daieok — 27 years in Korean cinema across film import, regional theatrical distribution, talent management and production. The channel is part of a Korean film-industry consortium of twelve companies that has distributed more than 80 films in Korea.</p>
+    </div>
+    <dl class="facts" data-reveal>
+      <div><dt data-ko="회사">Company</dt><dd>주식회사 억만장자픽처스 · Eokmanjangja Pictures Co., Ltd.</dd></div>
+      <div><dt data-ko="공동대표">Co-CEO</dt><dd data-ko="김대억">Kim Daieok</dd></div>
+      <div><dt data-ko="사업">Business</dt><dd data-ko="해외 영화 수입 · 배급 · 유튜브 AVOD 채널 운영">Film import &amp; distribution · YouTube AVOD channel</dd></div>
+      <div><dt data-ko="채널">Channel</dt><dd><a href="https://www.youtube.com/@OpenCinema247" target="_blank" rel="noopener">youtube.com/@OpenCinema247</a></dd></div>
+      <div><dt data-ko="형식">Formats</dt><dd data-ko="장편 영화 · 예고편 · 리뷰 & 분석">Films · Trailers · Reviews &amp; analysis</dd></div>
+      <div><dt data-ko="연락">Contact</dt><dd><a href="mailto:eokman.youtube@gmail.com">eokman.youtube@gmail.com</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="channel" id="channel">
+  <div class="wrap">
+    <a class="channel-card" data-reveal href="https://www.youtube.com/@OpenCinema247" target="_blank" rel="noopener">
+      <img class="ch-banner" src="assets/banner.jpg" alt="" loading="lazy" width="1600" height="461">
+      <div class="ch-row">
+        <img class="ch-avatar" src="assets/avatar.png" alt="" loading="lazy" width="512" height="512">
+        <div class="ch-text">
+          <b>Open Cinema 24/7</b>
+          <span>@OpenCinema247 · YouTube</span>
+          <p data-ko="새 영화 소식은 채널에 먼저 올라갑니다.">New films are announced on the channel first.</p>
+        </div>
+        <span class="btn gold" data-ko="구독">Subscribe</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot-top" data-reveal>
+      <h2 class="h2" data-ko="불은 켜져 있습니다.<br>들어오세요.">The lights are on.<br>Come in.</h2>
+      <a class="btn primary big" href="mailto:eokman.youtube@gmail.com">eokman.youtube@gmail.com</a>
+      <p class="socials">
+        <a href="https://www.youtube.com/@OpenCinema247" target="_blank" rel="noopener">YouTube @OpenCinema247</a>
+      </p>
+    </div>
+    <div class="foot-bottom">
+      <span class="wordmark">OPEN CINEMA <b>24/7</b></span>
+      <p>© 2026 Eokmanjangja Pictures Co., Ltd. <span data-ko="주식회사 억만장자픽처스">주식회사 억만장자픽처스</span> · <span data-ko="모든 영화는 판권사의 허가 아래 상영됩니다.">Films shown under license from their rights holders.</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="cursor" id="cursor" aria-hidden="true"><i></i></div>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
