@@ -27,6 +27,7 @@ const menuBtn = document.getElementById('menu');
 if (menuBtn) {
   menuBtn.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(open)); });
   document.querySelectorAll('#links a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }));
+  let menuY = 0; window.addEventListener('scroll', () => { if (!nav.classList.contains('open')) { menuY = scrollY; return; } if (Math.abs(scrollY - menuY) > 80) { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); } }, { passive: true });
 }
 
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('nomotion');
