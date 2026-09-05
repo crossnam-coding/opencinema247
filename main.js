@@ -23,6 +23,11 @@ const isKo = () => document.documentElement.lang === 'ko';
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('solid', window.scrollY > 40);
 window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+const menuBtn = document.getElementById('menu');
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => { const open = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(open)); });
+  document.querySelectorAll('#links a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }));
+}
 
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('nomotion');
 if (reduced) document.documentElement.style.scrollBehavior = 'auto';
@@ -208,7 +213,8 @@ function initStage() {
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: false, powerPreference: 'high-performance' });
   } catch (e) { hero.classList.add('nogl'); return null; }
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 1.75));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.25 : 1.75));   // phones: bloom at 1.25x is plenty and keeps 60fps
+  hero.classList.add('gl');
   renderer.setClearColor(0x050505, 1);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.05;
