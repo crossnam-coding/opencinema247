@@ -1,6 +1,6 @@
 # OPEN CINEMA 24/7 — channel site
 
-One-page site for the YouTube channel **OPEN CINEMA 24/7** (`@OpenCinema247`), operated by Eokmanjangja Pictures (주식회사 억만장자픽처스).
+One-page site for the YouTube channel **OPEN CINEMA 24/7** (`@OpenCinema247`), operated by Billionaire Pictures (주식회사 억만장자픽처스).
 
 Static HTML/CSS/JS, no build step — open `index.html` or serve the folder.
 
@@ -9,4 +9,4 @@ Static HTML/CSS/JS, no build step — open `index.html` or serve the folder.
 - Everything is self-hosted (`vendor/` Three.js 0.170 + GSAP 3.12.5, `assets/fonts/` woff2) — no third-party requests.
 - Debug params: `?no3d=1` (no WebGL), `?nomotion=1` (no animation), `?font=…` / `?kofont=…` / `?title=N` (marquee letters).
 
-© 2026 Eokmanjangja Pictures Co., Ltd. Channel art belongs to the channel; fonts under their respective open licenses (OFL).
+© 2026 Billionaire Pictures Co., Ltd. Channel art belongs to the channel; fonts under their respective open licenses (OFL).
